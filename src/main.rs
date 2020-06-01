@@ -10,8 +10,9 @@ fn main() {
     let node9 = Some(Rc::new(RefCell::new(TreeNode::new(9))));
     let node2 = Some(Rc::new(RefCell::new(TreeNode{val:2, left: node1, right: node3})));
     let node7 = Some(Rc::new(RefCell::new(TreeNode{val:7, left: node6, right: node9})));
-    let mut tree = TreeNode{val: 4, left: node2, right: node7};
+    let tree = TreeNode{val: 4, left: node2, right: node7};
 
-    tree.swap_total();  //Solution::invert_tree(Some(Rc::new(RefCell::new(tree))));
-    println!("Now {:?} will print!", tree);
+    // tree.swap_total();  
+    let result = Solution::invert_tree(Some(Rc::new(RefCell::new(tree))));
+    println!("Now {:?} will print!", result);
 }
