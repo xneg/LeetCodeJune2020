@@ -18,13 +18,13 @@ impl TreeNode {
       right: None
     }
   }
+}
 
+impl TreeNode {
   fn swap(&mut self) {
     match self {
       TreeNode{val: _, left: None, right: None} => (),
-      TreeNode{val: _, left, right} => {
-        std::mem::swap(left, right);
-      }
+      TreeNode{val: _, left, right} => std::mem::swap(left, right)
     }
   }
 }
