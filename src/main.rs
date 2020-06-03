@@ -1,7 +1,7 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 use LeetCodeJune2020::Solution;
-use LeetCodeJune2020::tree_node_inversion::TreeNode;
+use LeetCodeJune2020::TreeNode;
 
 fn main() {
     let node1 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
